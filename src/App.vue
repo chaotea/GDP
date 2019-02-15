@@ -6,14 +6,17 @@
       <multiselect
         class="search"
         v-model="selectedCountries"
-        v-bind:options="countries"
+        :options="countries"
         trackBy="label"
-        placeholder="null"
-        selectLabel="null"
-        deselectLabel="null"
-        multiple="true"
-        close-on-select="false"
-        clear-on-select="true"
+        label="label"
+        :multiple="true"
+        :placeholder="null"
+        :selectLabel="null"
+        :selectedLabel="null"
+        :deselectLabel="null"
+        :deselectedLabel="null"
+        :clear-on-select="true"
+        :close-on-select="false"
       ></multiselect>
     </div>
     <div class="graph-container">
