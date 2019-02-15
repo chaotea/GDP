@@ -556,13 +556,13 @@ fieldset[disabled] .multiselect {
 
 .multiselect__tag-icon:after {
   content: "×";
-  color: #266d4d;
+  color: #ffffff;
   font-size: 14px;
 }
 
 .multiselect__tag-icon:focus,
 .multiselect__tag-icon:hover {
-  background: #369a6e;
+  background: rgba(255,255,255,0.8)
 }
 
 .multiselect__tag-icon:focus:after,

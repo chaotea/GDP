@@ -7,12 +7,13 @@
         class="search"
         v-model="selectedCountries"
         v-bind:options="countries"
-        v-bind:placeholder="null"
-        v-bind:selectLabel="null"
-        v-bind:deselectLabel="null"
-        v-bind:multiple="true"
-        v-bind:close-on-select="false"
-        v-bind:clear-on-select="true"
+        trackBy="label"
+        placeholder="null"
+        selectLabel="null"
+        deselectLabel="null"
+        multiple="true"
+        close-on-select="false"
+        clear-on-select="true"
       ></multiselect>
     </div>
     <div class="graph-container">
