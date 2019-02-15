@@ -68,12 +68,31 @@ var chartOptions = {
   }
 }
 
+var countries = Object.keys(jsondata).slice(1).map(function(country) {
+  let color
+  if (country == "United States") {
+    color = "#0080FF"
+  } else if (country == "China") {
+    color = "#FF0000"
+  } else if (country == "Japan") {
+    color = "#C70024"
+  } else if (country == "European Union") {
+    color = "#003399"
+  } else {
+    color = randomColor()
+  }
+  return {
+    label: country,
+    color: color
+  }
+})
+
 export default {
   name: "App",
   data: function() {
     return {
-      selectedCountries: ["United States", "China", "Japan", "European Union"],
-      countries: Object.keys(jsondata).slice(1),
+      selectedCountries: [countries[249], countries[38], countries[71], countries[117]], // US CH EU JP
+      countries: countries,
       options: chartOptions
     }
   },
@@ -85,9 +104,9 @@ export default {
       } else {
         datasets = this.selectedCountries.map(function(country) {
           return {
-            label: country,
-            data: jsondata[country],
-            borderColor: randomColor(),
+            label: country.label,
+            data: jsondata[country.label],
+            borderColor: country.color,
             fill: false,
             spanGaps: true
           }

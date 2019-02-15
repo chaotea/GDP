@@ -24,8 +24,8 @@
           <div class="multiselect__tags-wrap" v-show="visibleValues.length > 0">
             <template v-for="(option, index) of visibleValues" @mousedown.prevent>
               <slot name="tag" :option="option" :search="search" :remove="removeElement">
-                <span class="multiselect__tag" :key="index">
-                  <span v-text="getOptionLabel(option)"></span>
+                <span class="multiselect__tag" :key="index" :style="{ background: option.color }">
+                  <span v-text="option.label"></span>
                   <i aria-hidden="true" tabindex="1" @keypress.enter.prevent="removeElement(option)"  @mousedown.prevent="removeElement(option)" class="multiselect__tag-icon"></i>
                 </span>
               </slot>
