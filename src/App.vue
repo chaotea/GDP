@@ -7,6 +7,7 @@
         class="search"
         v-model="selectedCountries"
         v-bind:options="countries"
+        v-bind:placeholder="null"
         v-bind:selectLabel="null"
         v-bind:deselectLabel="null"
         v-bind:multiple="true"
@@ -21,7 +22,7 @@
 </template>
 
 <script>
-import Multiselect from "vue-multiselect"
+import Multiselect from "./components/Multiselect.vue"
 import Chart from "chart.js"
 import jsondata from "./data/data.json"
 import randomColor from "randomcolor"
@@ -121,8 +122,6 @@ export default {
 
 </script>
 
-<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>
-
 <style>
 html, body, #app {
   height: 100%;
@@ -133,7 +132,7 @@ html, body, #app {
 }
 
 .title {
-  width: 50%;
+  width: 80%;
   margin: 5vh auto;
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -160,7 +159,7 @@ html, body, #app {
 }
 
 .search {
-  width: 80%;
+  width: 100%;
   margin: 5vh auto 0px;
 }
 
