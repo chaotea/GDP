@@ -1,7 +1,6 @@
 {
-  "name": "gdp",
-  "version": "0.1.0",
-  "private": true,
+  "name": "GDP",
+  "version": "1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -15,5 +14,10 @@
   "devDependencies": {
     "@vue/cli-service": "^3.4.0",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaotea/GDP.git"
+  },
+  "license": "ISC"
 }
