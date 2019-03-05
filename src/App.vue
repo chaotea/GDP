@@ -2,7 +2,8 @@
   <div id="app">
     <div class="title">
       <h2>Gross Domestic Product</h2>
-      <p>An interactive nominal GDP graph. Data from <a href="https://data.worldbank.org/">World Bank</a>.</p>
+      <p>An interactive nominal GDP graph, displaying data from <a href="https://data.worldbank.org/">World Bank</a>.</p>
+      <!-- <span>Github</span> -->
       <multiselect
         class="search"
         v-model="selectedCountries"
@@ -176,9 +177,11 @@ html, body, #app {
 
 .title a {
   text-decoration: none;
-  color: inherit;
-  border-bottom: 1px solid #111111;
-  transition: all 0.5s ease;
+  color: #2ECC40;
+}
+
+.title a:hover {
+    border-bottom: 1px solid #2ECC40;
 }
 
 .search {

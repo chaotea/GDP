@@ -692,7 +692,7 @@ fieldset[disabled] .multiselect {
 }
 
 .multiselect__option--highlight {
-  background: #41b883;
+  background: #2ECC40;
   outline: none;
   color: white;
 }
