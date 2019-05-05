@@ -2,7 +2,7 @@
   <div id="app">
     <div class="title">
       <h2>Gross Domestic Product</h2>
-      <p>An interactive nominal GDP graph, displaying data from <a href="https://data.worldbank.org/">World Bank</a>.</p>
+      <p>An interactive nominal GDP graph, displaying data from <a href="https://data.worldbank.org/">The World Bank</a>.</p>
       <!-- <span>Github</span> -->
       <multiselect
         class="search"
