@@ -152,7 +152,10 @@ html, body, #app {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+}
+
+body::-webkit-scrollbar { 
+  display: none;
 }
 
 .title {
